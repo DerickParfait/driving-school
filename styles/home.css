@@ -1,0 +1,52 @@
+*{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+
+header {
+    background-color:burlywood;
+    padding: 5px;
+    display: block;
+    
+    
+}
+.A1 {
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+
+}
+.vaccum{
+  grid-template-columns: 5fr 5fr 5fr ;
+  background-color:dodgerblue;
+  display: grid;
+  grid-template-areas: "header header header" " img intro1  intro2";
+  flex-direction: column;
+  padding: 5px;
+  border: 2px solid red;
+}
+.vaccum div.header{
+    grid-area: header;
+    text-align: center;
+}
+.vaccum div.img {
+    grid-area: img;}
+
+.vaccum div.intro1 {
+  background-color: yellowgreen;
+  grid-area: intro1;
+}
+.vaccum div.intro2 {
+    background-color: slateblue;
+    grid-area: intro2;
+}
+button {
+    width: 20%;
+    cursor: pointer;
+    background-color: darkgreen;
+}
